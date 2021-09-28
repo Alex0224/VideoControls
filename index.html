@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Meus controladores</title>
+</head>
+<body>
+    <div id="main-content" class="telaCheia">
+        <video controls id="videoCheio" class="videoCheio" src="media/video.mp4" poster="images/poster.jpg"></video> 
+        <button onclick="voltar()" class="fechar" type="button">Voltar</button>
+    </div>
+
+    <main class="container-principal">
+        <div class="VideoBox">
+            <video id="video" class="video" src="media/video.mp4" poster="images/poster.jpg"></video>
+            <div class="botoesDeControle">
+                <button onclick="play()" type="button">Play/Pause</button>
+                <button onclick="Ampliar()" type="button">Ampliar</button>
+                <button onclick="Reduzir()" type="button">Reduzir</button>
+                <button onclick="Normal()" type="button">Tamanho Normal</button>
+                <button onclick="TelaCheia()" type="button">Tela Cheia</button>
+                <button onclick="AumentarVolume()" type="button">Volume+</button>
+                <button onclick="BaixarVolume()" type="button">Volume-</button>
+                <button onclick="Mutar()" type="button">Mutar</button>
+            </div>
+        </div>
+    </main>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
